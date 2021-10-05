@@ -1,0 +1,35 @@
+.btn {
+  display: inline-block;
+  padding: 10px 30px;
+  line-height: 24px;
+  font-size: 20px;
+  text-align: center;
+  text-decoration: none;
+  background-color: var(--color-secondary);
+  color: var(--color-light);
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  box-shadow: 0 2px 8px #0002;
+  transition: all 0.5s;
+}
+.btn:hover {
+  box-shadow: 0 2px 8px #0007;
+}
+
+.btn-round {
+  display: inline-block;
+  width: 44px;
+  padding: 10px;
+  line-height: 24px;
+  font-size: 20px;
+  text-align: center;
+  text-decoration: none;
+  background-color: var(--color-secondary);
+  color: var(--color-light);
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+  box-shadow: 0 2px 8px #0002;
+  transition: all 0.5s;
+}

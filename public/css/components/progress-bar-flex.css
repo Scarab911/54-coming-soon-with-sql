@@ -1,0 +1,41 @@
+.progress-bar {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.progress-bar > .top {
+  display: flex;
+  justify-content: space-between;
+  font-size: 20px;
+}
+.progress-bar > .bottom {
+  display: inline-block;
+  width: 100%;
+  height: 6px;
+  background-color: #eee;
+}
+.progress-bar > .bottom > .progress {
+  display: inline-block;
+  height: 100%;
+  width: 90%;
+}
+.progress-bar .progress > .value {
+  display: inline-block;
+  height: 100%;
+  width: 0;
+  background-color: var(--color-primary);
+  animation-duration: 3s;
+  animation-fill-mode: forwards;
+}
+.progress-bar.loading .value {
+  animation-name: loading;
+}
+
+@keyframes loading {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 100%;
+  }
+}

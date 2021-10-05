@@ -1,0 +1,25 @@
+form {
+    display: inline-block;
+    width: 100%;
+}
+form > input,
+form > textarea {
+    display: inline-block;
+    width: 100%;
+    margin-bottom: 20px;
+    padding: 6px 0;
+    line-height: 28px;
+    font-size: 20px;
+    color: var(--color-dark);
+    border: none;
+    border-bottom: 2px solid #ccc;
+}
+form > textarea {
+    resize: vertical;
+    min-height: 96px;
+    max-height: 292px;
+}
+form ::placeholder {
+    color: var(--color-grey);
+    font-style: italic;
+}
